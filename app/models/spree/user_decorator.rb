@@ -1,5 +1,5 @@
-Spree::User.class_eval do
-  has_many :subscriptions
+Spree.user_class.class_eval do
+  has_many :subscriptions, class_name: "Spree::Subscription", foreign_key: "user_id"
 
   def find_or_create_stripe_customer(token=nil)
     return api_customer if stripe_customer_id?
