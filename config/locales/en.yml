@@ -41,3 +41,7 @@ en:
     trial_period_days: Trial Period Days
     unsubscribe: Unsubscribe
     view_events: View Events
+    api:
+      subscription:
+        already_subscribed: Already subscribed to plan
+        plan_missing: Plan does not exist
